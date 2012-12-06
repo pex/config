@@ -1,16 +1,20 @@
-# Installation
+# Config
+
+This includes several bash and git config files for easier system setup.
+
+## Installation
 
     $ cd ~ && git clone git@github.com:pex/config.git .config
     $ cd .config && ./install.sh
 
-# Customization
+## Customization
 
 You can add custom bash-configs to `~/.bash_custom.sh`. The file only gets loaded if existing.
 
-# Git auth
+## Git auth
 
 Replace git/config `[user]` with your own credentials.
 
-# TODO:
+### TODO:
 
-Customize git username on installation :)
+* Customize git username on installation :)
