@@ -17,12 +17,13 @@
   changed = green
   untracked = cyan
 [alias]
-  st = status
+  st = status --short --branch
   ci = commit
   br = branch
   co = checkout
   df = diff
-  lg = log -p
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --no-merges
+  lgs = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --no-merges --stat
 [mergetool "araxis"]
   cmd = araxis-mergetool \"$LOCAL\" \"$REMOTE\" \"$MERGED\" \"$BASE\"
 [merge]
