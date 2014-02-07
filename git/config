@@ -28,7 +28,7 @@
   cmd = araxis-mergetool \"$LOCAL\" \"$REMOTE\" \"$MERGED\" \"$BASE\"
 [merge]
   tool = araxis
-[heroku]
-  account = personal
 [core]
-  excludesfile = /Users/pex/.gitignore
+  excludesfile = ~/.gitignore
+[credential]
+	helper = osxkeychain

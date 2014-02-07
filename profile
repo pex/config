@@ -1,20 +1,17 @@
-# git extensions
-source ~/.config/bash/extensions/git_config.sh
-
 # paths
-source ~/.config/bash/paths.sh
+source ~/.config/common/paths.sh
 
 # colours
-source ~/.config/bash/colours.sh
+source ~/.config/common/colours.sh
 
 # shortcuts
-source ~/.config/bash/shortcuts.sh
+source ~/.config/common/shortcuts.sh
 
 # history
-source ~/.config/bash/history.sh
+source ~/.config/common/history.sh
 
 # custom stuff
-custom_source="~/bash_custom.sh"
+custom_source="~/.profile_custom"
 if [ -e "$custom_source" ]
 then
   source "$custom_source"
