@@ -12,11 +12,11 @@ set -gx fish_color_git_unmerged red
 set -gx fish_color_git_dirty_sign (set_color red)
 
 set -gx fish_prompt_git_status_added '✚'
-set -gx fish_prompt_git_status_modified '*'
-set -gx fish_prompt_git_status_renamed '➜'
+set -gx fish_prompt_git_status_modified '﹡'
+set -gx fish_prompt_git_status_renamed '➪'
 set -gx fish_prompt_git_status_copied '⇒'
 set -gx fish_prompt_git_status_deleted '✖'
-set -gx fish_prompt_git_status_untracked '?'
+set -gx fish_prompt_git_status_untracked '﹖'
 set -gx fish_prompt_git_status_unmerged '!'
 
 set -gx fish_prompt_git_status_order added modified renamed copied deleted untracked unmerged
