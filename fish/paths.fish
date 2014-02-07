@@ -10,4 +10,4 @@ set -gx RBENV_ROOT /usr/local/opt/rbenv
 set -gx PATH $RBENV_ROOT/bin $PATH
 set -gx PATH $RBENV_ROOT/shims $PATH
 
-rbenv rehash >/dev/null ^&1
+source (rbenv init - | psub) and rbenv rehash >/dev/null ^&1
