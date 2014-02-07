@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # paths
 source ~/.config/common/paths.sh
 
