@@ -1,9 +1,6 @@
 # paths
 source ~/.config/common/paths.sh
 
-# colours
-source ~/.config/common/colours.sh
-
 # shortcuts
 source ~/.config/common/shortcuts.sh
 
