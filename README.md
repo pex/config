@@ -1,15 +1,17 @@
 # Config
 
-This includes several bash and git config files for easier system setup.
+This includes several fish and git config files for easier system setup.
 
 ## Installation
 
-    $ cd ~ && git clone git@github.com:pex/config.git .config
-    $ cd .config && ./install.sh
+Note: You don't necessarily have to clone to `.config`.
 
-## Customization
-
-You can add custom bash-configs to `~/.bash_custom.sh`. The file only gets loaded if existing.
+```bash
+$ cd ~
+$ git clone git@github.com:pex/config.git .config
+$ cd .config
+$ ./install.sh # needs to run inside cloned repo!
+```
 
 ## Git auth
 

@@ -1,11 +1,4 @@
-# paths
-source ~/.config/fish/paths.fish
+oh-my-fish/theme-bobthefish
 
-# shortcuts
-source ~/.config/common/shortcuts
-
-# custom stuff
-set -l custom_source "~/.profile_custom"
-if test -e "$custom_source"
-  source "$custom_source"
-end
+set -g theme_color_scheme solarized-light
+set -g theme_date_format "+%a %H:%M"
