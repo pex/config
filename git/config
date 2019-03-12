@@ -4,7 +4,7 @@
 [alias]
   st = status --short --branch
 [core]
-  excludesfile = ~/.gitignore
-  editor = atom --wait
+  excludesfile = ~/.config/git/ignore
+  editor = code --wait
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain

@@ -1,4 +1,1 @@
-oh-my-fish/theme-bobthefish
-
-set -g theme_color_scheme solarized-light
-set -g theme_date_format "+%a %H:%M"
+set -g GIT_CONFIG ~/.config/git/config
