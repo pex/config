@@ -7,23 +7,32 @@ echo "-- Installing Homebrew"
 echo "-- Done."
 
 echo "-- Installing Homebrew Formulas"
-
-brew install git node fish yarn tig wget
-
+brew install git
+brew install node
+brew install fish
+brew install yarn
+brew install tig
+brew install gnupg
+brew install wget --with-iri
 echo "-- Done."
 
 echo "-- Installing Fisher"
-
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 fisher
-
 echo "-- Done."
 
 echo "-- Installing Cask Formulas"
 echo "-- (This might take some time...)"
+brew cask install hyper
+brew cask install visual-studio-code
+brew cask install ngrok
+brew cask install transmission
+brew cask install spotify
+brew cask install font-hack
+echo "-- Done."
 
-brew cask install hyper visual-studio-code ngrok transmission spotify font-hack
-
+echo "-- Cleaning up Brew"
+brew cleanup
 echo "-- Done."
 
 echo "-- Installing English/International Keyboard Layout"
