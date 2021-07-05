@@ -1,6 +1,6 @@
 [user]
   name = pex
-  email = rernst@farbenmeer.net
+  email = roman.ernst@farbenmeer.de
 [alias]
   st = status --short --branch
 [core]
@@ -8,3 +8,12 @@
   editor = code --wait
 [credential]
   helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
