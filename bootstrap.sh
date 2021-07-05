@@ -16,11 +16,6 @@ brew install gnupg
 brew install wget --with-iri
 echo "-- Done."
 
-echo "-- Installing Fisher"
-curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-fisher
-echo "-- Done."
-
 echo "-- Installing Cask Formulas"
 echo "-- (This might take some time...)"
 brew cask install hyper
