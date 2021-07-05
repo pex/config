@@ -1,6 +1,2 @@
-fish/fish_history
-fish/fishd.*
-fish/functions
-fisher
 configstore
 *node_modules
