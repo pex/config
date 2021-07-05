@@ -3,7 +3,7 @@
 DIR=`dirname "$0"`
 
 echo "-- Installing Homebrew"
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "-- Done."
 
 echo "-- Installing Homebrew Formulas"
@@ -18,12 +18,12 @@ echo "-- Done."
 
 echo "-- Installing Cask Formulas"
 echo "-- (This might take some time...)"
-brew cask install hyper
-brew cask install visual-studio-code
-brew cask install ngrok
-brew cask install transmission
-brew cask install spotify
-brew cask install font-hack
+brew install --cask hyper
+brew install --cask visual-studio-code
+brew install --cask ngrok
+brew install --cask transmission
+brew install --cask spotify
+brew install --cask font-hack
 echo "-- Done."
 
 echo "-- Cleaning up Brew"
