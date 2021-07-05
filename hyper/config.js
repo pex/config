@@ -23,16 +23,16 @@ module.exports = {
     fontWeightBold: 'bold',
 
     // line height as a relative unit
-    lineHeight: 1,
+    lineHeight: 1.2,
 
     // letter spacing as a relative unit
-    letterSpacing: 0,
+    letterSpacing: 0.5,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: '#52676f',
 
     // terminal text color under BLOCK cursor
-    cursorAccentColor: '#000',
+    cursorAccentColor: '#e9e2cb',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
     cursorShape: 'BLOCK',
@@ -41,20 +41,72 @@ module.exports = {
     cursorBlink: false,
 
     // color of the text
-    foregroundColor: '#fff',
+    foregroundColor: '#52676f',
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: '#000',
+    backgroundColor: '#fdf6e3',
 
     // terminal selection color
-    selectionColor: 'rgba(248,28,229,0.3)',
+    selectionColor: '#fcf4dc',
 
     // border color (window, tabs)
-    borderColor: '#333',
+    borderColor: '#535178',
+
+    // custom colors from solarized theme
+    colors: {
+      black: '#e4e4e4',
+      red: '#d70000',
+      green: '#5f8700',
+      yellow: '#af8700',
+      blue: '#0087ff',
+      magenta: '#af005f',
+      cyan: '#00afaf',
+      white: '#262626',
+      lightBlack: '#ffffd7',
+      lightRed: '#d75f00',
+      lightGreen: '#585858',
+      lightYellow: '#626262',
+      lightBlue: '#808080',
+      lightMagenta: '#5f5faf',
+      lightCyan: '#8a8a8a',
+      lightWhite: '#1c1c1c'
+    },
 
     // custom CSS to embed in the main window
-    css: '',
+    css: `
+      .hyper_main {
+        border-width: 0px;
+      }
+      .tabs_list {
+        border-color: transparent !important;
+      }
+      .tab_tab {
+        font-family: Menlo, Monaco;
+        border: transparent !important;
+        color: #52676f !important;
+        background-color: #D3CBB7;
+      }
+      .tab_tab.tab_active {
+        color: #52676f !important;
+        background-color: #fdf6e3;
+        border-bottom: none !important;
+        font-weight: bold;
+      }
+      .tabs_title {
+        font-family: Menlo, Monaco;
+        color: #52676f !important;
+      }
+      .tabs_nav {
+      	background-color: #D3CBB7 !important;
+      }
+      .tabs_borderShim {
+      	border: transparent;
+      }
+      .splitpane_divider {
+      	background-color: #D3CBB7 !important;
+      }
+    `,
 
     // custom CSS to embed in the terminal window
     termCSS: '',
@@ -122,7 +174,6 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyper-solarized-light', // theme
     'hypercwd', // open new tab in same directory
     'hyper-search',
     'hyper-pane',
