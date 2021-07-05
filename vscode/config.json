@@ -1,7 +1,7 @@
 {
-  "window.zoomLevel": 0.5,
   "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
   "workbench.colorTheme": "Solarized Light",
+  "workbench.enableExperiments": false,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.formatOnPaste": true,
@@ -9,5 +9,15 @@
   "editor.renderWhitespace": "boundary",
   "workbench.editor.highlightModifiedTabs": true,
   "files.trimTrailingWhitespace": true,
-  "files.trimFinalNewlines": true
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "editor.rulers": [
+    72,
+    120
+  ],
+  "cSpell.language": "en,de",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+  "liveshare.authenticationProvider": "GitHub",
+  "window.zoomLevel": 1
 }
