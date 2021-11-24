@@ -1,2 +1,4 @@
+Brewfile.lock.json
 configstore
 *node_modules
+yarn.lock

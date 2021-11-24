@@ -19,5 +19,5 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "liveshare.authenticationProvider": "GitHub",
-  "window.zoomLevel": 1
+  "window.zoomLevel": 2
 }
